@@ -808,19 +808,6 @@ F 3 "~" H 14850 7860 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:2N2219 Q2
-U 1 1 5C30BC3F
-P 14750 8550
-F 0 "Q2" H 14941 8504 50  0000 L CNN
-F 1 "2N2219" H 14941 8595 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 14950 8475 50  0001 L CIN
-F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 14750 8550 50  0001 L CNN
-	1    14750 8550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14850 8350 14850 8050
-$Comp
 L Device:R R31
 U 1 1 5C3573CB
 P 14350 8550
@@ -3397,4 +3384,17 @@ F 3 "" H 1550 1150 50  0001 C CNN
 	1    1550 1150
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5C8DEB6F
+P 14750 8550
+F 0 "Q?" H 14955 8596 50  0000 L CNN
+F 1 "SQ2364" H 14955 8505 50  0000 L CNN
+F 2 "" H 14950 8650 50  0001 C CNN
+F 3 "~" H 14750 8550 50  0001 C CNN
+	1    14750 8550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14850 8050 14850 8350
 $EndSCHEMATC
